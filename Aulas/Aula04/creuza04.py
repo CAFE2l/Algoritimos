@@ -50,4 +50,8 @@ frase = "CREUZA EM CONFUSÕES"
 
 print(f"{estilos['negrito']}{cores['azul']}{"==="*5}{cores['amarelo']}CREUZA{cores['verde']}{"==="*4+"=="}{cores['limpa']}")
 print(f"{cores['cinza']}{fundo['branco']}{estilos['negrito']}{frase.center(35)}{cores['limpa']}")
-print(f"{estilos['negrito']}{cores['vermelho']}{"==="*11+"=="}{cores['limpa']}") 
+print(f"{estilos['negrito']}{cores['vermelho']}{"==="*11+"=="}{cores['limpa']}")
+
+produto = float(input(f"{estilos['negrito']}{cores['cinza']}Qual o preço do produto? {cores['verde']}{estilos['italico']}US$"))
+imposto = (produto * 60)/100
+print(f"{estilos['negrito']}{cores['cinza']}O valor do imposto é de: {cores['verde']}US$ {imposto:.2f}{cores['limpa']}")
