@@ -46,9 +46,18 @@ estilos = {
     "sem_tachado": "\033[29m"
 }
 
-frase = "Programa da Maioridade"
+frase = "BOLETIM ESCOLAR"
 
-print(f"{estilos['negrito']}{cores['azul']}{"==="*5}{cores['amarelo']}CREUZA{cores['verde']}{"==="*4+"=="}{cores['limpa']}")
+print(f"{estilos['negrito']}{cores['azul']}{"==="*5}{cores['amarelo']}BOLETIM{cores['verde']}{"==="*4+"=="}{cores['limpa']}")
 print(f"{cores['cinza']}{fundo['branco']}{estilos['negrito']}{frase.center(35)}{cores['limpa']}")
 print(f"{estilos['negrito']}{cores['vermelho']}{"==="*11+"=="}{cores['limpa']}") 
 
+nota1 = float(input(f"{cores['cinza']}{estilos['negrito']}Primeira nota: "))
+nota2 = float(input(f"{cores['cinza']}{estilos['negrito']}Segunda nota: "))
+nota3 = float(input(f"{cores['cinza']}{estilos['negrito']}Terceira nota: "))
+media = (nota1 + nota2 + nota3) / 3
+
+if (media >=  7):
+    print(f"{estilos['negrito']}{cores['verde']}Média de {media:.1f}. Aluno aprovado!{cores['limpa']}")
+else:
+    print(f"{estilos['negrito']}{cores['vermelho']}Média de {media:.1f}. Aluno reprovado!{cores['limpa']}")
