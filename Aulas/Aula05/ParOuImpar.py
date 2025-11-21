@@ -46,15 +46,14 @@ estilos = {
     "sem_tachado": "\033[29m"
 }
 
-frase = "Programa da Maioridade"
+frase = "PAR OU IMPAR"
 
-print(f"{estilos['negrito']}{cores['azul']}{"==="*5}{cores['amarelo']}CREUZA{cores['verde']}{"==="*4+"=="}{cores['limpa']}")
+print(f"{estilos['negrito']}{cores['azul']}{"==="*5}{cores['cinza']}ParOuImpar{cores['verde']}{"==="*3+"="}{cores['limpa']}")
 print(f"{cores['cinza']}{fundo['branco']}{estilos['negrito']}{frase.center(35)}{cores['limpa']}")
 print(f"{estilos['negrito']}{cores['vermelho']}{"==="*11+"=="}{cores['limpa']}") 
 
-
-ano = int(input(f"{cores['cinza']}{estilos['negrito']}Em que ano estamos? s"))
-nasc = int(input(f"Em que ano você nasceu? "))
-idade = ano - nasc
-if (idade >=  21):
-    print(f"Em {estilos['italico']}{cores['azul']}{ano}{cores['cinza']} {estilos['reset']}{cores['cinza']}{estilos['negrito']}Você já terá atingido a maioridade.")
+num = int(input(f"{estilos['negrito']}{cores['cinza']}Digite um número qualquer: "))
+if (num  % 2 == 0):
+    print(f"O número {estilos['negrito']}{cores['azul']}{num}{cores['limpa']} é {estilos['negrito']}{cores['verde']}PAR{cores['limpa']}.")
+else:
+    print(f"O número {estilos['negrito']}{cores['azul']}{num}{cores['limpa']} é {estilos['negrito']}{cores['vermelho']}IMPAR{cores['limpa']}.")
