@@ -70,4 +70,4 @@ match int(input(f"{cores['cinza']}{estilos['negrito']}Escolha uma opção: ")):
             print(f"{estilos['negrito']}{estilos['italico']}{cores['azul']}{cont}", end=" ")
             cont -= 1
     case 3: 
-        print(f"{cores['vermelho']}{estilos['negrito']}{estilos['italico']}Saindo...")
+        print(f"{cores['vermelho']}{estilos['negrito']}{estilos['italico']}Saindo...{cores['limpa']}")
