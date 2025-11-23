@@ -1,0 +1,5 @@
+nome = str(input("Digite seu nome: "))
+print(f"Total de letras do seu nome: {len(nome)}")
+print(f"Seu nome em maisculas é: {nome.upper()}")
+print(f"A primeira letra do seu nome é: {nome[0]}")
+print(f"A ultima letra do seu nome é: {nome[-1]}")

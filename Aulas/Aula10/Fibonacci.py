@@ -13,5 +13,5 @@ print(T1)  # Exibe o primeiro termo (opcional)
 print(T2)  # Exibe o segundo termo (opcional)
 
 # Gera e exibe termos do 3º ao 10º
-for C in range(3, 11):    # inclui o 10º termo
+for C in range(3, 6):    # inclui o 10º termo
     T1, T2 = ProximoFibonacci(T1, T2)  # Atualiza T1 e T2 com os retornos da função
