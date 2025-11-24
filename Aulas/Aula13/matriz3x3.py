@@ -16,23 +16,16 @@ for L in range(0, 3):
 
 # Exibe os valores da matriz formatados
 for L in range(0, 3):
-    for c in range(0, 2):
+    for c in range(0, 3):
         print(f"{matriz[L][c]:4}", end=" ")  # Mostra cada elemento da linha
     print()  # Pula para a próxima linha
 
 print(f"Os valores pares foram: {numerosPares}")
 print(f"Os valores impares foram: {numerosImpares}")
 
-#Solução do guaná:
+#Solução do guaná:'
 
-matriz = []
+# matriz = []
 
-for L in range(0, 3):
-    for c in range(0, 3):
-        valor = int(input(f"Digite o valor da posição [{L},{c}]: "))
-        matriz.append(valor)
 
-for L in range(0, 3):
-    for c in range(0, 3):
-        print(f"{matriz[L, c]:4}", end=" ")
-    print()
+        
