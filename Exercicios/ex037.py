@@ -20,5 +20,9 @@ elif (sexo == "M" and anos < 20):
     print(f"Seu novo salário é: {novoSalario}")
 elif (sexo == "M" and anos > 20 and anos <= 30):
     aumento = salarioAtual * 0.13
+    novoSalario = salarioAtual + aumento
+    print(f"Seu novo salário é: {novoSalario}")
 elif (sexo == "M" and anos > 30):
     aumento = salarioAtual * 0.25
+    novoSalario = salarioAtual + aumento
+    print(f"Seu novo salário é: {novoSalario}")
