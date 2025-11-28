@@ -9,7 +9,7 @@ def situacao(media_aluno):
         return "APROVADO"
     elif media_aluno >= 5:
         return "RECUPERAÇÃO"
-    else:
+    else: 
         return "REPROVADO"
 
 # USO CORRETO das funções
